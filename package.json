@@ -1,13 +1,12 @@
 {
   "name": "laravel-elixir",
-  "version": "6.0.0-16",
+  "version": "6.0.0-17",
   "description": "Laravel Elixir Core",
   "main": "dist/index.js",
   "scripts": {
     "compile": "babel --presets=es2015 -d dist/ src/",
     "test": "cd elixir-test-app && mocha --require babel-core/register --require=test/bootstrap.js",
-    "prepublish": "npm run compile",
-    "postinstall": "npm run compile"
+    "prepublish": "npm run compile"
   },
   "repository": {
     "type": "git",
